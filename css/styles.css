@@ -1604,6 +1604,11 @@ section {
   border-bottom: 1px solid #dedfe0;
 }
 
+.footer-column__one {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-logo {
   width: fit-content;
 }
@@ -2407,8 +2412,6 @@ section {
   }
 
   .footer-column__one {
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
