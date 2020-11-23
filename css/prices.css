@@ -157,6 +157,12 @@
   font-size: 24px;
 }
 
+@media (max-width: 1600px) {
+  .body {
+    background: none;
+  }
+}
+
 @media (max-width: 576px) {
 
   .prices-table {
