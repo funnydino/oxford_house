@@ -1851,11 +1851,18 @@ section {
 
 .video-link {
   position: absolute;
+  display: flex;
   content: '';
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.video-image {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .video--enabled {
@@ -2979,6 +2986,10 @@ section {
 
   .popup-content {
     padding: 15px;
+  }
+
+  .popup-content__video {
+    padding: 0;
   }
 
   .popup-content__image {
