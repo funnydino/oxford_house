@@ -1,5 +1,13 @@
 /* Стили для страницы prices.html */
 
+.body {
+  background:
+    url('../img/body_bg/left_img.png') no-repeat left center,
+    url('../img/body_bg/left.svg') no-repeat left center,
+    url('../img/body_bg/right_img.png') no-repeat right center,
+    url('../img/body_bg/right.svg') no-repeat right center;
+}
+
 :root {
   /* Задаём фирменный жёлтый цвет как основной */
   --main-color: rgb(255, 191, 2);
