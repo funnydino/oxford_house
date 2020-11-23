@@ -1,11 +1,7 @@
 /* Стили для страницы prices.html */
 
 .body {
-  background:
-    url('../img/body_bg/left_img.png') no-repeat left center,
-    url('../img/body_bg/left.svg') no-repeat left center,
-    url('../img/body_bg/right_img.png') no-repeat right center,
-    url('../img/body_bg/right.svg') no-repeat right center;
+  background: url(../img/body_bg/left_img.png) no-repeat left top 400px, url(../img/body_bg/left.svg) no-repeat left top 250px, url(../img/body_bg/right_img.png) no-repeat right top 350px, url(../img/body_bg/right.svg) no-repeat right top 250px;
 }
 
 :root {
