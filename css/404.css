@@ -1,0 +1,60 @@
+/* Стили для страницы 404.html */
+
+:root {
+  --icon-color: rgb(39, 180, 252);
+}
+
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.error-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.error-page__left {
+  display: flex;
+  align-items: center;
+}
+
+.error-page__left span {
+  font-family: 'open-sans-condensed', sans-serif;
+  font-size: 144px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.error-image {
+  max-height: 150px;
+  width: auto;
+  margin: 0 30px;
+}
+
+.error-text a {
+  color: var(--icon-color)
+}
+
+.error-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .error-page {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .error-page__left span {
+    font-size: 100px;
+  }
+
+  .error-image {
+    margin: 0 10px;
+  }
+}

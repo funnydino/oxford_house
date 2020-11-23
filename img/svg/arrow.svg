@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 50" width="300" height="50">
+  <defs>
+    <style>
+        path, polyline {
+            fill: none;
+            stroke: #231F20;
+            vector-effect: non-scaling-stroke;
+            stroke-width: 2;
+       }
+        path {
+            stroke-dasharray: 8, 4; 
+        }
+    </style>
+    <marker id="pointer" markerWidth="10" markerHeight="8" 
+	refX="9.5" refY="5.1" orient="15" markerUnits="userSpaceOnUse">
+        <polyline points="1 1, 9 5, 1 7" />
+    </marker>
+  </defs>
+  <path d="M766,2886c159.293,77.77,161.275-25.53,135-8-17.354,32.83,125.2,20.4,160,40" transform="translate(-765.062 -2874.47)"
+    marker-end="url(#pointer)"/>
+</svg>
