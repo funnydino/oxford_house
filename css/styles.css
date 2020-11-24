@@ -856,7 +856,6 @@ section {
   flex-direction: column;
   padding: 55px;
   background: #f4f5f7;
-  cursor: pointer;
   user-select: none;
   transition: opacity .2s linear;
 }
@@ -1246,7 +1245,6 @@ section {
   min-height: 450px;
   background-color: #f4f5f7;
   user-select: none;
-  cursor: pointer;
 }
 
 .teachers-card::after {
@@ -1395,7 +1393,6 @@ section {
   padding: 45px 55px;
   background-color: #f4f5f7;
   user-select: none;
-  cursor: pointer;
 }
 
 .testimonials-card::after {
@@ -2107,6 +2104,10 @@ section {
     overflow: hidden;
   }
 
+  .swiper-wrapper__courses .swiper-slide {
+    opacity: 1;
+  }
+
   .courses-item::after,
   .teachers-card::after,
   .testimonials-card::after {
@@ -2429,6 +2430,15 @@ section {
   .video-container iframe {
     width: 80vw;
     height: calc(80vw/1.78);
+  }
+
+  .custom-placeholder>input:invalid+span {
+    top: 18px;
+  }
+
+  .custom-placeholder>input:valid+span,
+  .custom-placeholder>input:focus+span {
+    top: 2px;
   }
 }
 
@@ -3003,15 +3013,6 @@ section {
   .request input[type=tel],
   .request select {
     width: 100%;
-  }
-
-  .custom-placeholder>input:invalid+span {
-    top: 18px;
-  }
-
-  .custom-placeholder>input:valid+span,
-  .custom-placeholder>input:focus+span {
-    top: 2px;
   }
 }
 

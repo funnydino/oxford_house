@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', function () {
       console.log('Body scroll disabled!');
       body.style.paddingRight = scrollWidth;
       header.style.paddingRight = scrollWidth;
-      // document.getElementById('to-top__btn').style.right = "calc(30px + " + scrollWidth + "px)";
       body.classList.add("lock");
     } else if (navbar.classList.contains("active") && window.innerWidth <= 576) {
       console.log('Body scroll disabled!');
@@ -67,7 +66,7 @@ $("#tel").inputmask("+7 (999) 999-99-99");
 $("[data-scroll]").on("click", function (event) {
   event.preventDefault();
 
-  var $this = $(this),
+  let $this = $(this),
     blockId = $(this).data("scroll"),
     blockOffset = $(blockId).offset().top;
   $(".nav-item a").removeClass("active");

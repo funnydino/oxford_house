@@ -6,10 +6,32 @@ const slider_3 = document.querySelector('.swiper-container__about');
 const slider_4 = document.querySelector('.swiper-container__teachers');
 const slider_5 = document.querySelector('.swiper-container__testimonials');
 
+// Добавление либо удаление класса 'swiper-no-swiping' для '.swiper-container' (в зависимости от ширины экрана):
+
+myFunction();
+
+window.addEventListener('resize', myFunction);
+
+function myFunction() {
+  let windowWidth = window.innerWidth;
+  const swiper = document.querySelectorAll('.swiper-container');
+  if (windowWidth < 812) {
+    [...swiper].forEach(function (el) {
+      el.classList.remove("swiper-no-swiping");
+    });
+  } else {
+    [...swiper].forEach(function (el) {
+      el.classList.add("swiper-no-swiping");
+    });
+  };
+};
+
+// Работа слайдеров:
+
 window.addEventListener('DOMContentLoaded', function () {
   let mySwiper = new Swiper(slider, {
     direction: 'horizontal',
-    loop: true,
+    // loop: true,
     centeredSlides: true,
     pagination: {
       el: '.swiper-pagination',
@@ -26,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 1,
     spaceBetween: 30,
     direction: 'horizontal',
-    loop: true,
+    loop: false,
     centeredSlides: true,
     breakpoints: {
       669: {
@@ -35,11 +57,11 @@ window.addEventListener('DOMContentLoaded', function () {
       },
       1025: {
         slidesPerView: 3,
-        centeredSlides: true
+        centeredSlides: false
       },
       1367: {
         slidesPerView: 3,
-        centeredSlides: true,
+        loop: true,
         spaceBetween: 20
       }
     },
@@ -56,7 +78,7 @@ window.addEventListener('DOMContentLoaded', function () {
 window.addEventListener('DOMContentLoaded', function () {
   let mySwiper_3 = new Swiper(slider_3, {
     direction: 'horizontal',
-    loop: true,
+    // loop: true,
     navigation: {
       prevEl: '.swiper-button-about__prev',
       nextEl: '.swiper-button-about__next',
@@ -69,7 +91,7 @@ window.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 1,
     spaceBetween: 30,
     direction: 'horizontal',
-    loop: true,
+    // loop: true,
     breakpoints: {
       577: {
         slidesPerView: 2
@@ -94,7 +116,7 @@ window.addEventListener('DOMContentLoaded', function () {
 window.addEventListener('DOMContentLoaded', function () {
   let mySwiper_5 = new Swiper(slider_5, {
     direction: 'horizontal',
-    loop: true,
+    // loop: true,
     navigation: {
       prevEl: '.swiper-button-testimonials__prev',
       nextEl: '.swiper-button-testimonials__next',

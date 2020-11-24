@@ -42,6 +42,7 @@
   display: flex;
   background-color: var(--main-color);
   cursor: pointer;
+  transition: background-color .2s linear;
 }
 
 .price-header::after {
@@ -56,6 +57,11 @@
   background-color: #f9f9f9;
   transform: translateY(-50%);
   transition: background-color .2s linear, box-shadow .2s linear;
+}
+
+.price-header:hover,
+.prices-list__item.active .price-header {
+  background-color: rgba(255, 175, 2, .95);
 }
 
 .price-header:hover .price-title,
