@@ -15,7 +15,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
         data.append(pair[0], pair[1]);
       }
 
-      fetch('./php/send.php', {
+      fetch('send.php', {
           method: 'post',
           body: data,
         })
