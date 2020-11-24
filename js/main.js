@@ -86,9 +86,9 @@ $("[data-scroll]").on("click", function (event) {
 
 // Инициальзация reCapcha:
 
-function onSubmit(token) {
-  document.getElementById("request").submit();
-}
+// function onSubmit(token) {
+//   document.getElementById("request").submit();
+// }
 
 // Получаем все кнопки после загрузки слайдеров (для изменения Placeholder):
 
