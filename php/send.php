@@ -21,3 +21,5 @@ if($responseKeys["sucess"] && $responseKeys["score"] >= 0.5) {
 } else {
   echo json_encode(array('success' => 'false', 'om_score' => $responseKeys["score"], 'token' => $_POST['token']));
 }
+
+?>
