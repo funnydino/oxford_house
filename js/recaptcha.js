@@ -10,11 +10,14 @@ document.querySelector('form').addEventListener('submit', (e) => {
       tk = token;
       document.getElementById('token').value = token;
 
-      fetch('../js/send.php', {
+      const data = new URLSearchParams();
+      for (const pair of new FormData(document.querySelector('form'))) {
+        data.append(pair[0], pair[1]);
+      }
+
+      fetch('../php/send.php', {
           method: 'post',
-          body: {
-            token: tk
-          },
+          body: data,
         })
         .then(response => response.json())
         .then(result => console.log(result));
