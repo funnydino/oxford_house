@@ -84,6 +84,12 @@ $("[data-scroll]").on("click", function (event) {
   });
 });
 
+// Инициальзация reCapcha:
+
+function onSubmit(token) {
+  document.getElementById("request").submit();
+}
+
 // Получаем все кнопки после загрузки слайдеров (для изменения Placeholder):
 
 [...document.querySelectorAll('.btn-junior')].forEach(function (def) {
