@@ -62,16 +62,18 @@ function myFunction() {
 // Hidden Header depending on Scroll:
 
 function myFunction_2() {
-  let currentScrollPos = window.pageYOffset;
+  if (window.innerWidth <= 1024) {
+    let currentScrollPos = window.pageYOffset;
 
-  if (currentScrollPos === 0) {
-    document.getElementById("header").style.transform = "";
-  } else if (prevScrollpos < currentScrollPos && window.innerWidth <= 1024) {
-    document.getElementById("header").style.transform = "scaleY(0)";
-  } else {
-    document.getElementById("header").style.transform = "scaleY(1)";
+    if (currentScrollPos === 0) {
+      document.getElementById("header").style.transform = "";
+    } else if (prevScrollpos < currentScrollPos) {
+      document.getElementById("header").style.transform = "scaleY(0)";
+    } else {
+      document.getElementById("header").style.transform = "scaleY(1)";
+    };
+    prevScrollpos = currentScrollPos;
   };
-  prevScrollpos = currentScrollPos;
 };
 
 // Telephone mask (InputMask):
