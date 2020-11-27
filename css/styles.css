@@ -2297,6 +2297,14 @@ section {
     display: none;
   }
 
+  .header-top {
+    height: 65px;
+  }
+
+  .header-btn {
+    padding: 7px 30px;
+  }
+
   .hero-container {
     flex-direction: column-reverse;
     justify-content: center;

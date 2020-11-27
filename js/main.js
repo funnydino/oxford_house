@@ -31,13 +31,15 @@ window.addEventListener('DOMContentLoaded', function () {
 // Fixed Header:
 
 window.addEventListener('scroll', function () {
-  myFunction()
+  myFunction();
+  myFunction_2();
 });
 
 const toTopBtn = document.getElementById('to-top__btn');
 const headerH = document.querySelector('.header').offsetHeight + document.querySelector('.navbar').offsetHeight;
 const title = document.querySelector('.main-title');
 const sticky = header.offsetHeight + hero.offsetHeight;
+let prevScrollpos = window.pageYOffset;
 
 function myFunction() {
   if (window.pageYOffset >= headerH && window.pageYOffset < sticky) {
@@ -56,6 +58,21 @@ function myFunction() {
     title.classList.remove('visually-hidden');
   }
 }
+
+// Hidden Header depending on Scroll:
+
+function myFunction_2() {
+  let currentScrollPos = window.pageYOffset;
+
+  if (currentScrollPos === 0) {
+    document.getElementById("header").style.transform = "";
+  } else if (prevScrollpos < currentScrollPos && window.innerWidth <= 1024) {
+    document.getElementById("header").style.transform = "scaleY(0)";
+  } else {
+    document.getElementById("header").style.transform = "scaleY(1)";
+  };
+  prevScrollpos = currentScrollPos;
+};
 
 // Telephone mask (InputMask):
 
