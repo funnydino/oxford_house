@@ -753,6 +753,7 @@ section {
 
 .services-item {
   position: relative;
+  max-width: 304px;
   margin-bottom: 30px;
   border-radius: 7px;
   /* background-color: #95e1d3; */
