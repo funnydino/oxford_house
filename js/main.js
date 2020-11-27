@@ -67,8 +67,10 @@ function myFunction_2() {
 
     if (currentScrollPos === 0) {
       document.getElementById("header").style.transform = "";
+      body.classList.remove("lock");
     } else if (prevScrollpos < currentScrollPos) {
       document.getElementById("header").style.transform = "scaleY(0)";
+      body.classList.remove("lock");
     } else {
       document.getElementById("header").style.transform = "scaleY(1)";
     };
