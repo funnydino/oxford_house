@@ -888,6 +888,7 @@ section {
 
 .course-feature {
   padding-left: 40px;
+  line-height: 30px;
 }
 
 .course-feature:not(:last-child) {
