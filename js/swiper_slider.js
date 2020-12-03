@@ -33,13 +33,17 @@ window.addEventListener('DOMContentLoaded', function () {
     direction: 'horizontal',
     // loop: true,
     centeredSlides: true,
+    parallax: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      dynamicBullets: true
     },
     autoplay: {
-      delay: 5000,
+      delay: 10000,
     },
+    autoHeight: true,
+    speed: 1000,
   });
 });
 
@@ -121,8 +125,15 @@ window.addEventListener('DOMContentLoaded', function () {
       prevEl: '.swiper-button-testimonials__prev',
       nextEl: '.swiper-button-testimonials__next',
     },
+    effect: 'flip',
+    flipEffect: {
+      slideShadows: true,
+      limitRotation: true
+    },
     // autoplay: {
     //   delay: 5000,
     // },
+    autoHeight: true,
+    speed: 500,
   });
 });
