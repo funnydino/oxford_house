@@ -36,8 +36,7 @@ window.addEventListener('DOMContentLoaded', function () {
     parallax: true,
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true
+      clickable: true
     },
     autoplay: {
       delay: 10000,
