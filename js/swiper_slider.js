@@ -42,7 +42,6 @@ window.addEventListener('DOMContentLoaded', function () {
     autoplay: {
       delay: 10000,
     },
-    autoHeight: true,
     speed: 1000,
   });
 });

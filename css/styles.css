@@ -600,6 +600,11 @@ section {
   left: 15px;
 }
 
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  bottom: 25px;
+  left: 75px;
+}
+
 .swiper-pagination {
   text-align: left;
 }
@@ -2284,6 +2289,11 @@ section {
   .swiper-pagination-fraction {
     bottom: 0;
     left: 0;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    bottom: 0;
+    left: 50%;
   }
 
   .swiper-pagination {
