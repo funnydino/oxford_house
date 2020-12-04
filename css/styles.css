@@ -2101,8 +2101,7 @@ section {
   .swiper-container__hero,
   .swiper-container__courses,
   .swiper-container__about,
-  .swiper-container__teachers,
-  .swiper-container__testimonials {
+  .swiper-container__teachers {
     overflow: hidden;
   }
 
