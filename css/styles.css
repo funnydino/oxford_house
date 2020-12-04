@@ -1357,7 +1357,7 @@ section {
 .swiper-wrapper__teachers .swiper-slide {
   opacity: 0;
   visibility: hidden;
-  transition: opacity .2s linear;
+  transition: all .2s linear;
 }
 
 .swiper-wrapper__teachers .swiper-slide-active,
