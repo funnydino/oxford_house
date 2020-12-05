@@ -861,7 +861,7 @@ section {
   transition: opacity .2s linear;
 }
 
-.courses-item.swiper-slide {
+/* .courses-item.swiper-slide {
   visibility: hidden;
 }
 
@@ -869,7 +869,7 @@ section {
 .courses-item.swiper-slide-active,
 .courses-item.swiper-slide-next {
   visibility: visible;
-}
+} */
 
 .courses-item::after {
   position: absolute;
